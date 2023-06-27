@@ -1,20 +1,20 @@
-$("#btnBaixo").click(
-    function () {
-        $("#area").animate({ top: "300px", }, { duration: 200 })
-    }
-)
-$("#btnCima").click(
-    function () {
-        $("#area").animate({ top: "200px" }, { duration: 200 })
-    }
-)
+/*$(document).ready(function() {
+    var containerWidth = $('#container').width();
+    var personagemWidth = $('#personagem').width();
+    var limiteDireita = containerWidth - personagemWidth;
+
+    $('#personagem').animate({left: limiteDireita}, 2000, function() {
+        $('#personagem').animate({left: 0}, 2000);
+    });
+});*/
+
 $("#btnDireita").click(
     function () {
-        $("#area").animate({ left: "1000px" }) /*{ duration: 1000, complete: () => { alert("Fim da movimentação") } })*/
+        $("#personagem").animate({ left: "400px" }, {duration: 3000 }) 
     }
 )
 $("#btnEsquerda").click(
     function () {
-        $("#area").animate({ left: "450px" }, { duration: 200 })
+        $("#personagem").animate({ left: "0px" }, { duration: 2000 })
     }
 )

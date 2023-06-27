@@ -1,24 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+<head>
+    <title>Animação com jQuery</title>
+    <style>
+        #container {
+            position: relative;
+            width: 600px;
+            height: 100px;
+            border: 4px solid #000;
+            overflow: hidden;
+            background-color: #080949;
+        }
+        #personagem {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            top: 100%;
+            
+        }
+        #sol{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+        #pedra{
+            position: absolute;
+            top: 30%;
+            left: 90%;
+            width: 60px;
+            height: 70px;
+        }
+        #elemento {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 60px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.jquery.com/jquery-3.6.3.js"
-            integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-        <title>Movimentação</title>
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-    </head>
+    <div id="container">
+        <div><img src="image/predio2.png" id="elemento">
+        <img src="image/pedra.png" id="pedra">
+        </div>
+        <div  id="sol"><img src="image/carro2.png" id="personagem"></div>
+    </div>
 
-    <body>
-        <div id="area" class="area"></div>
-        <button id="btnBaixo"><img src="image/baixo.png" style="width: 50px; height: 50px;"></button>
-        <button id="btnCima"><img src="image/cima.png" style="width: 50px; height: 50px;"></button>
-        <button id="btnEsquerda"><img src="image/esquerdo.png" style="width: 50px; height: 50px;"></button>
-        <button id="btnDireita"><img src="image/direito.png" style="width: 50px; height: 50px;"></button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 
-        <script src="js/script.js"></script>
-    </body>
+    <button id="btnEsquerda"><img src="image/esquerdo.png" style="width: 50px; height: 50px;"></button>
+    <button id="btnDireita"><img src="image/direito.png" style="width: 50px; height: 50px;"></button>
 
+
+    <script src="js/script.js"></script>
+
+</body>
 </html>
